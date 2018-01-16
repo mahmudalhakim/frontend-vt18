@@ -1,2 +1,2 @@
-# Frontend (kvalit17) VT18
+# Kurs: Frontend (kvalit17) VT18
 ## Lärare: Mahmud Al Hakim
