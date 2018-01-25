@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 11 </title>
+    <style>
+
+    /* Element-väljare (Element Selectors) */
+    body{
+        /*
+        margin-top:50px;
+        margin-bottom:50px;
+        margin-right: auto;
+        margin-left: auto;
+        */
+        /*
+        margin:50px auto 50px auto;
+        */
+        margin:50px auto;
+        width: 600px;
+        border: 1px solid goldenrod;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    h1,h2,h3{
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+    }
+    /* ID-Regler (Används enbart en gång) */
+    #banner{
+        border:5px solid black;
+        border-radius: 25px;
+        width: 400px;
+        height: 200px;
+    }
+    #logo{
+        width: 300px;
+        height: 100px;
+        font-family: Georgia, Times, serif;
+        font-size: 40px;
+        border:1px dashed grey;
+    }
+    /* Klasser (Får återanvändas) */
+    .centrera{
+        text-align: center;
+    }
+    .kantlinje{
+        border:5px solid red;
+    }
+    .box{
+        background-color: #f7f6d8;
+        margin: 50px;
+        border: 1px solid gold;
+        padding:50px;
+    }
+    </style>
+</head>
+<body>
+<div id="logo">LOGOTYP</div>
+<h1 class="centrera">Mer om Boxmodellen i CSS</h1>
+<div class="centrera">
+<!-- <img src="http://lorempixel.com/400/200/sports/Copyright &copy; 2018 Mahmud Al Hakim" 
+alt="Dummy Image"> -->
+<img id="banner" src="https://picsum.photos/200/300/?random" alt="Dummy Image">
+</div>
+
+<h1>Lorem Ipsum</h1>
+
+<div class="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro itaque culpa quidem! Quibusdam totam commodi necessitatibus minima quidem earum accusamus nemo tenetur asperiores sit libero quisquam, repellat maiores cupiditate.
+</div>
+<div class="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam id rem, consequatur quas dolore rerum quod natus blanditiis nostrum veniam iste sit quae deserunt non commodi doloribus consequuntur? Nisi, incidunt.
+</div>
+<hr>
+<h2 class="centrera box">Använd två klasser i samma element</h2>
+<div class="centrera">
+    <img class="kantlinje" src="https://picsum.photos/200/300/?random" alt="Dummy Image">
+</div>
+<div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur neque dolorem ipsam quo architecto excepturi, repellendus beatae recusandae nesciunt. At, sunt reprehenderit quos veritatis eius autem facere iusto consectetur aut?
+</div>
+<div class="centrera">
+    <img class="kantlinje" src="https://picsum.photos/200/300/?random" alt="Dummy Image">
+</div>
+<div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur neque dolorem ipsam quo architecto excepturi, repellendus beatae recusandae nesciunt. At, sunt reprehenderit quos veritatis eius autem facere iusto consectetur aut?
+</div>
+<div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur neque dolorem ipsam quo architecto excepturi, repellendus beatae recusandae nesciunt. At, sunt reprehenderit quos veritatis eius autem facere iusto consectetur aut?
+</div>
+<div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur neque dolorem ipsam quo architecto excepturi, repellendus beatae recusandae nesciunt. At, sunt reprehenderit quos veritatis eius autem facere iusto consectetur aut?
+</div>
+<div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur neque dolorem ipsam quo architecto excepturi, repellendus beatae recusandae nesciunt. At, sunt reprehenderit quos veritatis eius autem facere iusto consectetur aut?
+</div>
+</body>
+</html>

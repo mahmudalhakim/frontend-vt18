@@ -3,3 +3,10 @@ h1{
     color: brown;
     font-family: 'Supermercado One', cursive;
 }
+
+body{
+    width:900px;
+    margin:auto;
+}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 12</title>
+    <style>
+    /* Skapa en specifik klass */
+    ul.first{
+        list-style-type: none;
+        margin: 0; padding: 0;
+    }
+
+    ul#navigation{
+        margin: 0;
+        padding:0;
+        list-style-type: none;
+    }
+    ul#navigation a{
+        text-decoration: none;
+        padding: 10px;
+        width: 100px;
+        background-color: #036;
+        color: #FFF;
+        border-bottom: 1px solid #FFF;
+        border-radius: 0 10px;
+        display: block; /* Viktigt att kunna */
+        /* Bra att veta 
+        display: inline-block;
+        kan kopplas till li för att placera 
+        list-element bredvid varandra
+        */
+    }
+    ul#navigation a:hover{
+        background-color: #69C;
+        color: #000;
+    }   
+
+    </style>
+</head>
+<body>
+    <h1 class="first">CSS - Listor</h1>
+    <ul id="navigation">
+        <li><a href="#">Hem</a></li>
+        <li><a href="#">Om oss</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Tjänster</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="first">
+        <li>Punkt 1</li>
+        <li>Punkt 2</li>
+        <li>Punkt 3</li>
+        <li>Punkt 4</li>
+        <li>Punkt 5</li>
+    </ul>
+    <ul>
+        <li>Punkt 1</li>
+        <li>Punkt 2</li>
+        <li>Punkt 3</li>
+        <li>Punkt 4</li>
+        <li>Punkt 5</li>
+    </ul>
+</body>
+</html>
