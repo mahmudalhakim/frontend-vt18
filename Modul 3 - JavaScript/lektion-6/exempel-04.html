@@ -11,13 +11,25 @@
 <body>
     <h1>JavaScript - Exempel 4</h1>
     <h2>Variabler</h2>
-    <p id="demo"></p>
-
+    <p id="namn"></p>
+    <p id="total"></p>
     <script>
      // Deklarera och initiera en variabel
-     var namn = "Mahmud Al Hakim";
+     var namn = "Mahmud Al Hakim"; // En String-variabel
+     document.getElementById("namn").innerHTML = namn;
 
-     document.getElementById("demo").innerHTML = namn;
+     // Variabler av typen Number (heltal/decimaltal)
+     var pris = 95.50;
+     var antal = 5; 
+     var total = pris * antal;
+
+     // En variabel som referar till elementet med id="total" 
+     var el = document.getElementById("total");
+     el.innerHTML = total.toLocaleString() + " kr"; 
+
+     // Konstanter i JavaScript
+     const TITEL = "Nackademin";
+     TITEL = "Mahmud"; // OBS! FEL... Titta i Chrome DevTools
 
     </script>
 </body>
