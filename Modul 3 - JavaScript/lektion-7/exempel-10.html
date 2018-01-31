@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 10</title>
+</head>
+<body>
+    <h1>Exempel 10</h1>
+    <h2>Arbeta med objekt i JavaScript</h2>
+    
+    <script>
+    
+    // Skapa ett objekt med en konstruktor 
+    // (Constructor Notation)
+    var obj = new Object(); 
+
+    // Skapa en ny egenskap 
+    obj.name = "Mahmud Al Hakim"; 
+
+    // Skapa en ny metod
+    obj.hello = function (){
+        console.log("Hej " + obj.name);
+    }
+
+    // Anrop av metoden hello i objektet obj
+    obj.hello();
+
+
+    // Skapa ett objekt med {} (Literal Notation)
+    var person = {  // OBS! {} istället för new Object()
+        name : "Kalle Anka" , // OBS! kolon och kommatecken
+        hello : function(){
+            console.log("Hello " + this.name); 
+            // OBS! Det räcker ej med bara name
+            // Använd nyckelordet this för att komma åt
+            // egenskaper inne i ett objekt
+        }
+    } // Här avslutas objektet
+
+    // Anrop av metoden hello i objektet person
+    person.hello();
+
+    // Skapa en klass i JavaScript 
+    class Person{
+        constructor(firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+        fullname(){
+            return this.firstname + " " + this.lastname;
+        }
+    }
+
+    // Skapa en instans av klassen Person
+    var p1 = new Person("Erik" , "Larsson");
+    console.log(p1.firstname);
+    console.log(p1.lastname);
+    console.log(p1.fullname()); // OBS! En metod. Glöm en ()
+    console.log(p1); // Skicka hela objektet
+
+    </script>
+
+</body>
+</html>
