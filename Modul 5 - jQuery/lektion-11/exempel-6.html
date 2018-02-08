@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 6</title>
+</head>
+<body>
+    <h1>jQuery - Exempel 6</h1>
+    <h2>ID-väljare</h2>
+
+    <p id="ingress">
+        <strong>Ingress: </strong> 
+        Lite text och annat smått och gott.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe reprehenderit inventore tempora alias nisi harum dicta maiores vero? Reiciendis modi assumenda ipsa adipisci velit placeat accusantium pariatur. Asperiores, fuga odit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit doloremque iste voluptas labore distinctio sit blanditiis natus voluptatibus itaque perspiciatis voluptate cupiditate, ullam hic aliquam doloribus numquam. Doloribus, quos nesciunt.</p>
+    <button>
+        Klicka här för att dölja ingressen
+    </button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script>
+    $(document).ready(function(){
+    
+       $("button").click(function(){
+            $("#ingress").hide();
+        }); // Avslutar click
+
+    }); // Avslutar ready
+    </script>
+    
+</body>
+</html>

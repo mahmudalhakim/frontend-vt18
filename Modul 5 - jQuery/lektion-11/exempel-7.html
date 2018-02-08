@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 7</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1>jQuery - Exempel 7</h1>
+    <h2>Klass-väljare</h2>
+
+    <h3 class="demo">Rubrik 3 med klassen demo</h3>
+    <p class="demo">
+        Ett stycke med klassen demo. <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe reprehenderit inventore tempora alias nisi harum dicta maiores vero? Reiciendis modi assumenda ipsa adipisci velit placeat accusantium pariatur. Asperiores, fuga odit.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit doloremque iste voluptas labore distinctio sit blanditiis natus voluptatibus itaque perspiciatis voluptate cupiditate, ullam hic aliquam doloribus numquam. Doloribus, quos nesciunt.</p>
+    
+    <button id="dolj" class="btn btn-outline-danger">
+        Klicka här för att dölja alla element som har klassen demo
+    </button> <br> <br>
+    <button id="visa"  class="btn btn-outline-info">
+        Klicka här för att visa alla element som har klassen demo
+    </button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script>
+    $(document).ready(function(){
+    
+       $("#dolj").click(function(){
+            $(".demo").hide();
+        }); // Avslutar click
+
+        $("#visa").click(function(){
+            $(".demo").show();
+        })
+
+    }); // Avslutar ready
+    </script>
+    
+</body>
+</html>
