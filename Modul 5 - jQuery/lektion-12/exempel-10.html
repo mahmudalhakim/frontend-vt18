@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Exempel 9</title>
-
-    <!-- Implementera Bootstrap -->
+    <title>Exempel 10</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-        .important{
-            font-weight: bold;
-            color: red;
-        }
-    </style>
 </head>
 <body class="container">
     <h1>jQuery - Exempel 10</h1>
-    <h2></h2>
+   
+    <p id="demo">Peka här för att visa mer information!</p>
+    <div id="info" style="display:none">
+        <h2>Information</h2>
+        <p>
+            Här kommer mer information om...
+        </p>
+        <img src="https://picsum.photos/200/300" alt="">
 
+    </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
@@ -27,7 +26,13 @@
     <script>
     $(document).ready(function(){
      
-       
+        $("#demo").mouseenter(function(){
+            $("#info").show();
+        })
+
+        $("#demo").mouseleave(function(){
+            $("#info").hide();
+        })
         
     });
     </script>
